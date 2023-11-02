@@ -1,0 +1,303 @@
+@font-face {
+    font-family: Bebas;
+    src: url(../assets/fonts/BebasNeue-Regular.otf); }
+  
+  /* @font-face {
+    font-family: Akira;
+    src: url(../assets/fonts/Akira\Expanded\Demo.otf); } */
+  
+  @font-face {
+    font-family: code;
+    src: url(../assets/fonts/CodeSaver-Regular.otf); }
+
+/*todo lo correspondiente al codigo*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; }
+
+img {
+    max-width: 100%; }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; }
+
+.header {
+    display: flex;
+    flex-direction: none;
+    justify-content: none;
+    align-items: center;
+    gap: none;
+    min-height: 80vh;
+    background-color: #D6FF38;
+    padding: 70px 0; }
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: none; }
+
+.logo {
+    font-family: Bebas;
+    font-size: 35px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 800; }
+
+.menu .navbar ul li {
+    position: relative;
+    float: left; }
+    .menu .navbar ul li a {
+    font-size: 20px;
+    padding: 25px;
+    color: #111111;
+    display: block;
+    font-family: Code;
+    transition: 0.4s; }
+    .menu .navbar ul li a:hover {
+    color: #cfcfcf; }
+
+#menu {
+    display: none; }
+
+.menu-icono {
+    width: 25px; }
+
+.menu label {
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+    font-size: 55px; }
+    .menu label:hover {
+    color: #cfcfcf; }
+
+.navbar2 {
+    display: flex;
+    flex-direction: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px; }
+
+.submenu {
+    position: relative; }
+    .submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4e4B5076;
+    padding: 20px;
+    min-width: 400px; }
+    .submenu:hover div table {
+    width: 100%; }
+    .submenu:hover div table th, .submenu:hover div table td {
+    color: #FFFFFF; }
+
+#carrito {
+    display: none; }
+
+.borrar {
+    background-color: #111111;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 800;
+    cursor: pointer; }
+
+.header-content {
+    display: flex;
+    flex-direction: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: none;
+    flex: 1;
+    padding: 0 200px; }
+
+.header-txt {
+    flex-basis: 100%;
+    text-align: center; }
+    .header-txt h1 {
+    font-size: 90px;
+    font-family: Akira;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #111111;
+    font-family: Akira;
+    margin-bottom: 15px; }
+    .header-txt p {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: Code; }
+
+.img {
+    display: flex;
+    flex-direction: none;
+    justify-content: space-between;
+    align-items: none;
+    gap: none;
+    padding: 105px; }
+
+.img1, .img3 {
+    display: flex;
+    flex-direction: none;
+    justify-content: none;
+    align-items: center;
+    gap: 20px; }
+    .img1 img, .img3 img {
+    width: 500px;
+    height: 600px;
+    margin-right: 15px;
+    border-radius: .625rem .625rem .625rem .625rem; }
+
+.img2 {
+    display: flex;
+    flex-direction: none;
+    justify-content: none;
+    align-items: center;
+    gap: 20px; }
+    .img2 img {
+    width: 550px;
+    height: 650px;
+    margin-right: 15px;
+    border-radius: .625rem .625rem .625rem .625rem; }
+
+
+.card-container {
+    margin-top: 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-content {
+    min-width: 320px;
+    width: 30%;
+    background-color: #FFA1F5;
+    box-shadow: #ffa1f62d 0px 10px 36px 0px, #ffa1f62d 0px 0px 0px 1px;
+}
+
+.card-content img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body h2 {
+    font-size: 2rem;
+}
+
+.badget {
+    display: flex;
+    gap: 10px;
+    color: #282828;
+}
+.card-link{
+    width: 100%;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.form-container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.form-container-header {
+    width: 100%;
+}
+
+.form-container-inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.form-container-inputs div {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    width: 48%;
+
+}
+
+.form-container-inputs div label{
+    font-size: 1.2rem;
+}
+.form-container-inputs div input {
+    height: 40px;
+    padding: 5px;
+}
+
+#save-button{
+width: 48%;
+border: none;
+outline: none;
+font-size: 1.2rem;
+cursor: pointer;
+}
+
+.ropas-content{
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.ropas-content-rigth{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ropas-content-rigth img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ropas-content-rigth button {
+    background-color: rgb(164, 8, 8);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    padding: 10px;
+    cursor: pointer;
+}
